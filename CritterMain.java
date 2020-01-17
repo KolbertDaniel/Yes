@@ -1,11 +1,14 @@
-// CSE 142 Homework 9 (Critters)
-// Authors: Stuart Reges and Marty Stepp
-//          modified by Kyle Thayer
-//
-// CritterMain provides the main method for a simple simulation program.  Alter
-// the number of each critter added to the simulation if you want to experiment
-// with different scenarios.  You can also alter the width and height passed to
-// the CritterFrame constructor.
+/*
+Name: John-Paul Powers, Trent Bultsma
+Date: 1/16/2020
+Class: CS145
+Assignment: Lab #2
+
+CritterMain provides the main method for a simple simulation program.  Alter
+the number of each critter added to the simulation if you want to experiment
+with different scenarios.  You can also alter the width and height passed to
+the CritterFrame constructor.
+*/
 
 public class CritterMain {
     public static void main(String[] args) {
@@ -13,7 +16,7 @@ public class CritterMain {
 
         // uncomment each of these lines as you complete these classes
         frame.add(30, Bear.class);
-        // frame.add(30, Lion.class);
+        frame.add(30, Lion.class);
         // frame.add(30, Giant.class);
         // frame.add(30, Husky.class);
 
