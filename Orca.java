@@ -4,10 +4,14 @@ import java.util.Arrays;
 
 public class Orca extends Critter {
 
-    private boolean isBlack = Math.random() < 0.5;
+    private boolean isBlack;
     private int turn = 0;
     private String[] stringOptions = {"A", "a"};
     private boolean turnNextTurn = false;
+
+    public Orca() {
+        isBlack = Math.random() < 0.5;
+    }
 
     // always infects the critter in front
     // otherwise it will turn to face a surrounding critter

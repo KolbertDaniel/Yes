@@ -6,6 +6,8 @@ public class Lion extends Critter {
     private Color pickedColor;
     private static Color[] colorOptions = {Color.RED, Color.GREEN, Color.BLUE};
 
+    public Lion() {}
+
     // always infect if an enemy is in front
     // otherwise if a wall is in front or to the right, then turn left
     // otherwise if a fellow Lion is in front, then turn right

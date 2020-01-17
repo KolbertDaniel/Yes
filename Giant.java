@@ -5,6 +5,8 @@ public class Giant extends Critter{
     private static String[] modes = new String[] {"fee","fie","foe","fum"};
     private int mode = 0;
 
+    public Giant() {}
+
     public Action getMove(CritterInfo info) {
         mode = (mode+1)%24;
         Neighbor front = info.getFront();
