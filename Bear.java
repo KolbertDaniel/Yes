@@ -13,8 +13,10 @@ public class Bear extends Critter {
     // otherwise hop if possible
     // otherwise turn left
     public Action getMove(CritterInfo info) {
-        if (info.getFront() == Neighbor.OTHER) return Action.INFECT;
-        else if (info.getFront() == Neighbor.EMPTY) return Action.HOP;
+        Neighbor front = info.getFront();
+
+        if (front == Neighbor.OTHER) return Action.INFECT;
+        else if (front == Neighbor.EMPTY) return Action.HOP;
         return Action.LEFT;
     }
 
